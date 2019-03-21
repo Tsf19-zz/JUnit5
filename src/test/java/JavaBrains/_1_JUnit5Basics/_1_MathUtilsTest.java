@@ -6,6 +6,7 @@ package JavaBrains._1_JUnit5Basics;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 
 /**
  * @author Tousif
@@ -28,6 +29,35 @@ class _1_MathUtilsTest {
 		assertEquals(expected, actual, "The add() method should add two numbers");
 		
 	}
+	
+	/**BEFORE JUnit5*/
+//	@org.junit.Test(expected = ArithmeticException.class)
+//	void testDivide() {
+//		_1_MathUtils mathUtils = new _1_MathUtils();
+//		mathUtils.divide(1, 0);
+//	}
+	
+	/**Using Anonymous class Implementing Executable execute() method*/
+//	@Test
+//	void testDivide() {
+//		_1_MathUtils mathUtils = new _1_MathUtils();
+//	
+//		assertThrows(ArithmeticException.class, new Executable() {
+//			@Override
+//			public void execute() throws Throwable {
+//				mathUtils.divide(1, 0);
+//			}
+//			
+//		},"Divide by zero throws ArithmeticException");
+//	}
+	
+	/**Using Lambda Expression Implementing Executable execute() method*/
+	@Test
+	void testDivide() {
+		_1_MathUtils mathUtils = new _1_MathUtils();
+		assertThrows(ArithmeticException.class, () -> mathUtils.divide(1, 0),"Divide by zero throws ArithmeticException");
+	}
+	
 	
 	@Test
 	void testComputeCircleArea() {
