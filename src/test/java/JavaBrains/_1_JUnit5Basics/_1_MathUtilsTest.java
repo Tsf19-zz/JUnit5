@@ -28,5 +28,11 @@ class _1_MathUtilsTest {
 		assertEquals(expected, actual, "The add() method should add two numbers");
 		
 	}
+	
+	@Test
+	void testComputeCircleArea() {
+		_1_MathUtils mathUtils = new _1_MathUtils();
+		assertEquals(314.1592653589793, mathUtils.computeCircleArea(10), "Should return circle area");
+	}
 
 }
