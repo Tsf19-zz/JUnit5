@@ -21,7 +21,11 @@ class _1_MathUtilsTest {
 		_1_MathUtils mathUtils = new _1_MathUtils();
 		int expected = 14;
 		int actual = mathUtils.add(7, 7);
-		assertEquals(expected, actual);
+
+//		assertEquals(expected, actual);
+		/** Adding 3rd argument i.e, message :
+		 *  Messgae will be thrown when assertEquals() fails */ 
+		assertEquals(expected, actual, "The add() method should add two numbers");
 		
 	}
 
