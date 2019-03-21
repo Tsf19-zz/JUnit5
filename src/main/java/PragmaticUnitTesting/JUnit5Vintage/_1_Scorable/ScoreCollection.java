@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Scorable2;
+package PragmaticUnitTesting.JUnit5Vintage._1_Scorable;
 
 import java.util.ArrayList;
 import java.util.List;

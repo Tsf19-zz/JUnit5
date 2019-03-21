@@ -1,12 +1,23 @@
 /**
  * 
  */
-package Profile3;
+package PragmaticUnitTesting.JUnit5Vintage._2_ProfileForm;
 
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import PragmaticUnitTesting.JUnit5Vintage._2_ProfileForm.Answer;
+import PragmaticUnitTesting.JUnit5Vintage._2_ProfileForm.Bool;
+import PragmaticUnitTesting.JUnit5Vintage._2_ProfileForm.BooleanQuestion;
+import PragmaticUnitTesting.JUnit5Vintage._2_ProfileForm.Criteria;
+import PragmaticUnitTesting.JUnit5Vintage._2_ProfileForm.Criterion;
+import PragmaticUnitTesting.JUnit5Vintage._2_ProfileForm.Profile;
+import PragmaticUnitTesting.JUnit5Vintage._2_ProfileForm.Weight;
+
 
 /**
  * @author Tousif

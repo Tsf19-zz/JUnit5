@@ -1,14 +1,14 @@
-/**
- * 
- */
-package Scorable2;
+package PragmaticUnitTesting.JUnit5Vintage._1_Scorable;
+
+import org.junit.Test;
+
+import PragmaticUnitTesting.JUnit5Vintage._1_Scorable.ScoreCollection;
 
 //import static org.junit.Assert.*;
+//import org.junit.Ignore;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.equalTo;
 
-import org.junit.Ignore;
-import org.junit.Test;
 
 /**
  * @author Tousif

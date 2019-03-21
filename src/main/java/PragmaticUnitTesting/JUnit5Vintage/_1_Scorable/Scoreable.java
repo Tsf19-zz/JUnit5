@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Scorable2;
+package PragmaticUnitTesting.JUnit5Vintage._1_Scorable;
 
 /**
  * @author Tousif

@@ -1,4 +1,4 @@
-package Profile3;
+package PragmaticUnitTesting.JUnit5Vintage._2_ProfileForm;
 
 import java.util.*;
 

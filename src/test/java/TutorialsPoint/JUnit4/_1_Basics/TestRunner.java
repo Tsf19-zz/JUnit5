@@ -1,7 +1,8 @@
 /**
  * 
  */
-package JUnitTest1;
+package TutorialsPoint.JUnit4._1_Basics;
+
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
