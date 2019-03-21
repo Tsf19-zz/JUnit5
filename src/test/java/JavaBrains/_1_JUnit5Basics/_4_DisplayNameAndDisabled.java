@@ -3,10 +3,12 @@
  */
 package JavaBrains._1_JUnit5Basics;
 
+import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -21,7 +23,7 @@ public class _4_DisplayNameAndDisabled {
 	
 	@BeforeEach
 	void init() {
-		System.out.println("@BeforeEach - init()..");
+		mathUtils = new _1_MathUtils();
 	}
 
 	/**
@@ -36,6 +38,13 @@ public class _4_DisplayNameAndDisabled {
 	}
 	
 	@Test
+	@Disabled
+	void testDisabled() {
+		fail("This Test Should be Disabled");
+	}
+	
+	@Test
+	@DisplayName("Division Method") 
 	void testDivide() {
 		assertThrows(ArithmeticException.class, () -> mathUtils.divide(1, 0),"Divide by zero throws ArithmeticException");
 	}
