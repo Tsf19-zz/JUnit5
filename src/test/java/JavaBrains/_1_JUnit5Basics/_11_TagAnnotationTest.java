@@ -13,6 +13,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.RepetitionInfo;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledOnOs;
 import org.junit.jupiter.api.condition.EnabledOnOs;
@@ -20,10 +21,16 @@ import org.junit.jupiter.api.condition.OS;
 
 /**
  * @author Tousif
+ *
+ * @Tag
+ * Tags are used to filter which tests are executed for a given test plan.
+ * a development team may tag tests with values and then supply a list of tags
+ * to be included in or excluded from the current test plan.
  * 
- */
-
-public class _10_RepeatedTestAnnotationTest {
+ * From Eclipse -> Run Configuration
+ * we can include/exclude Tags
+ * */
+public class _11_TagAnnotationTest {
 
 	_1_MathUtils mathUtils;
 	
@@ -34,6 +41,7 @@ public class _10_RepeatedTestAnnotationTest {
 
 	@Nested
 	@DisplayName("addTest Methods")
+	@Tag("Math")
 	class AddTest {
 		
 		@RepeatedTest(3) //Number of times to repeat
@@ -73,6 +81,7 @@ public class _10_RepeatedTestAnnotationTest {
 	
 	@Test
 	@DisplayName("Multiply Method")
+	@Tag("Math")
 	void testMultiply() {
 //		assertEquals(4, mathUtils.multiply(2, 2),"Should return product");
 		
@@ -85,6 +94,7 @@ public class _10_RepeatedTestAnnotationTest {
 	
 	@Test
 	@DisabledOnOs(OS.WINDOWS)
+	@Tag("Math")
 	void testDivide() {
 		assertThrows(ArithmeticException.class, () -> mathUtils.divide(1, 0),"Divide by zero throws ArithmeticException");
 	}
@@ -92,6 +102,7 @@ public class _10_RepeatedTestAnnotationTest {
 	
 	@Test
 	@EnabledOnOs(OS.LINUX)
+	@Tag("Circle")
 	void testComputeCircleArea() {
 		assertEquals(314.1592653589793, mathUtils.computeCircleArea(10), "Should return circle area");
 	}
