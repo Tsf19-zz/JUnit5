@@ -55,7 +55,7 @@ public class _11_TagAnnotationTest {
 		
 		@RepeatedTest(3)
 		@DisplayName("Adding")
-		void testAdd2( RepetitionInfo repetitionInfo ) { //RepetitionInfo Object
+		void testAdd2( RepetitionInfo repetitionInfo ) { //RepetitionInfo Object <-- Dependency Injection
 			
 //			repetitionInfo.getTotalRepetitions()
 //			repetitionInfo.getCurrentRepetition()
