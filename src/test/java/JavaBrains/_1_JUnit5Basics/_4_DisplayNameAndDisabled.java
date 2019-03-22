@@ -37,8 +37,14 @@ public class _4_DisplayNameAndDisabled {
 		assertEquals(expected, actual, "The add() method should add two numbers");
 	}
 	
+	/**
+	 * @Disabled is used to signal that the annotated test class or test method is currently disabled 
+	 * and should not be executed.
+	 * When applied at the class level, all test methods within that class are automatically disabled as well.
+	 */
 	@Test
 	@Disabled
+	@DisplayName("Disabled Method") 
 	void testDisabled() {
 		fail("This Test Should be Disabled");
 	}
