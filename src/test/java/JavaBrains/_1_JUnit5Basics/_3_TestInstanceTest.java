@@ -24,11 +24,11 @@ import org.junit.jupiter.api.TestInstance;
 
 /** When using this mode, a new test instance will be created once per test class*/
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class _3_TestInstance {
+public class _3_TestInstanceTest {
 	
 	
 	/**Default Constructor to check number of Instance*/
-	public _3_TestInstance() {
+	public _3_TestInstanceTest() {
 		System.out.println("Instance");
 	}
 	

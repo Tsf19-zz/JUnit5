@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Test;
  * @author Tousif
  *
  */
-public class _4_DisplayNameAndDisabled {
+public class _4_DisplayNameAndDisabledTest {
 
 	
 	_1_MathUtils mathUtils;

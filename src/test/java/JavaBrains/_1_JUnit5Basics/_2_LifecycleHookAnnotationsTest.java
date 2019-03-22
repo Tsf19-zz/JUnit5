@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
  * @author Tousif
  *
  */
-public class _2_LifecycleHookAnnotations {
+public class _2_LifecycleHookAnnotationsTest {
 
 	_1_MathUtils mathUtils;
 	

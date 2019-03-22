@@ -41,7 +41,7 @@ import org.junit.jupiter.api.condition.OS;
  *  
  */
 
-public class _5_EnabledDisabledConditionalExecutions {
+public class _5_EnabledDisabledConditionalExecutionsTest {
 
 	_1_MathUtils mathUtils;
 	
